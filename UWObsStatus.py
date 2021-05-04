@@ -5,7 +5,7 @@ from github import Github
 
 search = str(sys.argv[1])
 
-UWobs = pd.read_csv('https://raw.githubusercontent.com/avapolzin/UWStatusSearch/main/UWobs.txt', sep = '\t')
+UWobs = pd.read_csv('https://raw.githubusercontent.com/avapolzin/UWSStatusSearch/main/UWobs.txt', sep = '\t')
 
 result = UWobs.loc[UWobs.ID == search]
 if len(result) == 0:
@@ -22,13 +22,13 @@ if (Nframes < 100) and (Nframes > 0):
 	status = 'been partially observed'
 
 g = Github()
-repo = g.get_repo('avapolzin/UWSCoordSearch')
+repo = g.get_repo('avapolzin/UWSStatusSearch')
 commits = repo.get_commits(path='UWobs.txt')
 
 last_update = commits[0].commit.committer.date.strftime('%b %d %Y')
 
 print('\n\n')
 print('Observation status, last updated %s:\n'%last_update)
-print('%s has %s, with %i frames. \n'%(field, status, Nframes))
+print('%s has %s (%i frames). \n'%(field, status, Nframes))
 print('Nights observed: %s'%(obs_dates))
 print('\n')
