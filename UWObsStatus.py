@@ -18,7 +18,7 @@ if Nframes >= 100:
 	status = 'been fully observed'
 if Nframes == 0:
 	status = 'not been observed'
-else: 
+if (Nframes < 100) and (Nframes > 0): 
 	status = 'been partially observed'
 
 g = Github()
