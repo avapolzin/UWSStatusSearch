@@ -20,4 +20,5 @@ Dependencies:
   - Sys
 
 
-![coverage map][./UWS_observed_fields.png]
+![UWS_observed_fields](https://user-images.githubusercontent.com/29441772/122487782-0cbc7780-cfaa-11eb-970c-77ea5f52939a.png)
+
