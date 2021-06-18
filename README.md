@@ -18,3 +18,6 @@ Dependencies:
   - Pandas
   - Datetime
   - Sys
+
+
+![coverage map][UWS_observed_fields.png]
