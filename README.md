@@ -20,4 +20,4 @@ Dependencies:
   - Sys
 
 
-![coverage map][UWS_observed_fields.png]
+![coverage map][./UWS_observed_fields.png]
