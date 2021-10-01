@@ -20,10 +20,5 @@ Dependencies:
   - Sys
 
 
-![UWS_observed_fields](https://user-images.githubusercontent.com/29441772/124369043-848ad300-dc35-11eb-9881-c00e384337d2.png)
-
-
-![UWS_observed+reduced_fields](https://user-images.githubusercontent.com/29441772/124369045-86549680-dc35-11eb-9944-5d1ce44d7028.png)
-
 
 
