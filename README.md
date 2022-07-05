@@ -1,7 +1,10 @@
 # UWSCoordSearch
 Match object/coordinates to UW field + see observation status.
 
-Quick scripts that can be run as is or can be aliased for easy access.
+
+## Inside _UWSStatusSearch/cli_
+***
+Quick scripts that can be run as is, aliased, or made executable and put in the path for easy access.
 
 
 
