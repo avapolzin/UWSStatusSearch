@@ -5,6 +5,8 @@ Match object/coordinates to UW field + see observation status.
 
 Crossmatching of catalogs (just the NASA-Sloan Atlas and the Updated Nearby Galaxy Catalog for now -- please open an issue if you believe there are additional catalogs that would be suited to crossmatching with the survey) is available in `uwstatus.plotting.field()`.
 
+If you use this package or the other scripts in this repository (described further below) in a publication or presentation, please add a footnote linking to _https://github.com/avapolzin/UWSStatusSearch_ and consider adding this software to your acknowledgments.
+
 ***
 ## Inside _UWSStatusSearch/cli_
 Quick scripts that can be run as is, aliased, or made executable and put in the path for easy access.
