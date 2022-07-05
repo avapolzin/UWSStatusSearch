@@ -86,7 +86,12 @@ def survey(highlight_fields = False, save_path = False, **kwargs):
 		s = 'Survey is %i%% completed as of %s.'%((len(UWobs[UWobs.Nobs >= 100])/len(UWobs))*100, last_update), fontsize = 12)
 
 	if highlight_fields:
-		ax.scatter()
+		for i in highlight_fields:
+			highlight_ra = UWcoords.ra.radian[UWobs.ID == i] - np.deg2rad(180)
+			highlight_dec = UWcoords.dec.radian[UWobs.ID == i]
+			ax.scatter(highlight_ra, highlight_dec, marker = 'x', s = 130, c = 'k')
+			ax.text(highlight_ra - np.deg2rad(1), highlight_dec + np.deg2rad(5), 
+				s = '%s'%i, color = 'k', fontsize = 15)
 
 	tick_labels = np.array([30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330])
 	ax.set_xticklabels(tick_labels) 
@@ -117,7 +122,8 @@ def field(field, highlight_coords = False, save_path = False, virial = False,
 		save_path (str, path): Default is False, in which case figure is not saved. 
 			Otherwise, feed save a path to save the plot.
 		virial (bool): Default is False. If True, will plot virial radii of crossmatched 
-			galaxies (within distance limits) that overlap with the field.
+			galaxies (within distance limits) that overlap with the field. Will also read
+			out percentage of field covered by virial radii.
 		dist_limits (list, range): Default is [0, 20], which limits distance for 
 			crossmatched galaxies to those < 20 Mpc. The format is [lower limit, upperlimit]
 			in Mpc.
@@ -135,4 +141,10 @@ def field(field, highlight_coords = False, save_path = False, virial = False,
 
 
 
+
+
+
+
+
+	return fig, ax
 
