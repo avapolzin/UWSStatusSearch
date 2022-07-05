@@ -19,5 +19,5 @@ setuptools.setup(
 		"Topic :: Scientific/Engineering :: Physics"],
 	python_requires = ">=3",
 	install_requires = ["numpy", "matplotlib", "astropy", "pandas", 
-		"datetime", "pygithub", "descartes"]
+		"shapely", "datetime", "pygithub", "descartes"]
 )
