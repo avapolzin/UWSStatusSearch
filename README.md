@@ -5,11 +5,11 @@ Match object/coordinates to UW field + see observation status.
 
 Crossmatching of catalogs (just the NASA-Sloan Atlas and the Updated Nearby Galaxy Catalog for now -- please open an issue if you believe there are additional catalogs that would be suited to crossmatching with the survey) is available in `uwstatus.plotting.field()`.
 
-If you use this package or the other scripts in this repository (described further below) in a publication or presentation, please add a footnote linking to _https://github.com/avapolzin/UWSStatusSearch_ and consider adding this software to your acknowledgments. If you do use the single field crossmatching function, please cite [Karachentsev, Makarov, & Kaisina (2013)](https://ui.adsabs.harvard.edu/abs/2013AJ....145..101K/abstract) and reference the [NASA-Sloan Atlas](http://nsatlas.org/data). If you use the functionality to view overlapping virial radii from crossmatched sources, please also cite [Mowla et al. (2019)](https://ui.adsabs.harvard.edu/abs/2019ApJ...872L..13M/abstract).
+If you use this package or the other scripts in this repository (described further below) in a publication or presentation, please add a footnote linking to _https://github.com/avapolzin/UWSStatusSearch_ and consider adding this software to your acknowledgments. (If you would like to cite `uwstatus` please email me and I will ensure that there is a citable DOI available.) If you do use the single field crossmatching function, please cite [Karachentsev, Makarov, & Kaisina (2013)](https://ui.adsabs.harvard.edu/abs/2013AJ....145..101K/abstract) and reference the [NASA-Sloan Atlas](http://nsatlas.org/data). If you use the functionality to view overlapping virial radii from crossmatched sources, please also cite [Mowla et al. (2019)](https://ui.adsabs.harvard.edu/abs/2019ApJ...872L..13M/abstract).
 
 ***
 ## Inside _UWSStatusSearch/cli_
-Quick scripts that can be run as is, aliased, or made executable and put in the path for easy access.
+Quick scripts that can be run as is, aliased, or made executable and put in the path for easy access from the command line.
 
 Not all functionality is available with the scripts in this directory, since they're based on an older version of these tools. For instance, the only plotting option is to show the status of the whole survey. To cobble together the other plotting functionality, you can see the scripts that inspired that functionality at [here](https://github.com/avapolzin/DFUltrawide).
 
