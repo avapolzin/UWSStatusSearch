@@ -3,8 +3,13 @@ import datetime
 from github import Github
 from astropy.coordinates import SkyCoord
 
+### Dragonfly UW observing status ###
 UWobs = pd.read_csv('https://raw.githubusercontent.com/avapolzin/UWSStatusSearch/main/UWobs.txt', sep = '\t')
 coords = SkyCoord(UWobs.RA, UWobs.Dec, unit = ['hr', 'deg'])
+
+##########
+# * * * * 
+##########
 
 def status(search, type = 'field', verbose = True):
 
