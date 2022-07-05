@@ -22,7 +22,7 @@ def status(search, type = 'field', verbose = True):
 
 	Returns:
 		Nframes (int): Number of frames taken for the relevant field.
-		obs_dates (list): Lists the dates on which the relevant field was observed.
+		obs_dates (list, str): Lists the dates on which the relevant field was observed.
 	"""
 
 	if type == 'field':
@@ -35,7 +35,7 @@ def status(search, type = 'field', verbose = True):
 		field_center = SkyCoord(result.RA, result.Dec, unit = ['hr', 'deg'])
 
 		if verbose:
-			
+
 			if Nframes >= 100:
 				status = 'been fully observed'
 			if Nframes == 0:
@@ -145,7 +145,7 @@ def namesearch(search, verbose = True):
 	Returns:
 		field (str): Name of UW field object falls into.
 		Nframes (int): Number of frames taken for the relevant field.
-		obs_dates (list): Lists the dates on which the relevant field was observed.
+		obs_dates (list, str): Lists the dates on which the relevant field was observed.
 	"""
 
 	c = SkyCoord.from_name(search)
@@ -198,7 +198,7 @@ def coordsearch(search, verbose = True):
 	Returns:
 		field (str): Name of UW field coordinates fall into.
 		Nframes (int): Number of frames taken for the relevant field.
-		obs_dates (list): Lists the dates on which the relevant field was observed.
+		obs_dates (list, str): Lists the dates on which the relevant field was observed.
 	"""
 
 	c = SkyCoord(search, unit = ['hr', 'deg'])
