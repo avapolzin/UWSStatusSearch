@@ -2,8 +2,9 @@
 Match object/coordinates to UW field + see observation status.
 
 
-## Inside _UWSStatusSearch/cli_
+
 ***
+## Inside _UWSStatusSearch/cli_
 Quick scripts that can be run as is, aliased, or made executable and put in the path for easy access.
 
 
