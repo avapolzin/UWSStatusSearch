@@ -125,8 +125,9 @@ def field(field, highlight_coords = False, save_path = False, virial = False,
 			galaxies (within distance limits) that overlap with the field. Will also read
 			out percentage of field covered by virial radii.
 		dist_limits (list, range): Default is [0, 20], which limits distance for 
-			crossmatched galaxies to those < 20 Mpc. The format is [lower limit, upperlimit]
-			in Mpc.
+			crossmatched galaxies to those < 20 Mpc. The format is [lower limit, upper limit]
+			in Mpc. Because of the catalogs in use, the maximum distance that can be 
+			accomodated is 
 		verbose (bool): Default is True. If True, will print names, locations, inferred 
 			stellar masses, and distances of crossmatched galaxies within the field.
 		**kwargs: Figure keyword arguments to feed to matplotlib.
