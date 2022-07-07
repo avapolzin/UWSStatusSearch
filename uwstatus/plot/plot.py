@@ -202,12 +202,17 @@ def field(field, highlight_coords = False, save_path = False, virial = False,
 		color = 'k', marker = 'x', s = 150)
 
 	ax.scatter(RA_LV[~np.isfinite(loglum_LV.values)], Dec_LV[~np.isfinite(loglum_LV.values)], 
-		color = 'k', label = r'$M_* <= 10^{7} \, M_\odot$', s = 75)
+		color = 'k', label = r'$M_* <= 10^{7} \, M_\odot$', s = 75, marker = '+')
 	ax.scatter(RA_LV[np.isfinite(loglum_LV.values) & (loglum_LV.values <= 7)], Dec_LV[np.isfinite(loglum_LV.values) & (loglum_LV.values <= 7)], 
-		color = 'k', s = 75)
+		color = 'k', s = 75, marker = '+')
 	ax.scatter(RA_[masses_ <= 10**7], 
 		Dec_[masses_ <= 10**7], 
-		color = 'k', s = 75)
+		color = 'k', s = 75, marker = '+')
+
+	if highlight_coords:
+		hcs = SkyCoord([highlight_coords[i][0] for i in len(highlight_coords)], 
+			[highlight_coords[i][1] for i in len(highlight_coords)], unit = ['hr', 'deg'])
+		ax.scatter(hcs.ra.deg, hcs.dec.deg, color = 'red', s = 75, marker = '*')
 
 	ax.legend(loc = 'best', fontsize = 10)
 
