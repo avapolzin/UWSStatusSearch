@@ -6,7 +6,7 @@ setuptools.setup(
 	author = "Ava Polzin",
 	author_email = "apolzin@uchicago.edu",
 	description = "Match object/coordinates to Dragonfly UW field + see observation status.",
-	packages = ["uwstatus", "uwstatus/status", "uwstatus/plotting"],
+	packages = ["uwstatus", "uwstatus/search", "uwstatus/plot"],
 	url = "https://github.com/avapolzin/UWSStatusSearch",
 	license = 'MIT',
 	classifiers = [

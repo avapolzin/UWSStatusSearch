@@ -1,0 +1,8 @@
+numpy
+matplotlib
+astropy
+pandas
+shapely
+datetime
+pygithub
+descartes
