@@ -1,7 +1,14 @@
 # UWSCoordSearch
 Match object/coordinates to UW field + see observation status.
 
+See `examples.ipynb` to see some examples of how to use `uwstatus`.
 
+To download and install,
+```
+git clone git@github.com:avapolzin/UWSStatusSearch.git
+
+sudo python3 setup.py install
+```
 
 Crossmatching of catalogs (just the NASA-Sloan Atlas and the Updated Nearby Galaxy Catalog for now -- please open an issue if you believe there are additional catalogs that would be suited to crossmatching with the survey) is available in `uwstatus.plot.field()`.
 
