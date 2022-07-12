@@ -193,7 +193,7 @@ def field(field, highlight_coords = False, save_path = False, virial = False,
 	
 	ax.scatter(RA_LV[np.isfinite(loglum_LV.values) & (loglum_LV.values >= 10)], Dec_LV[np.isfinite(loglum_LV.values) & (loglum_LV.values >= 10)], 
 		color = 'k', marker = 'X', label = r'$M_* >= 10^{10} \, M_\odot$', s = 150)
-	ax.scatter(RA_[(dist_ <= 20) & (masses_ >= 10**10)], Dec_[(dist_ <= 20) & (masses_ >= 10**10)], color = 'red', marker = 'X', s = 150)
+	ax.scatter(RA_[masses_ >= 10**10], Dec_[masses_ >= 10**10], color = 'red', marker = 'X', s = 150)
 
 	ax.scatter(RA_LV[np.isfinite(loglum_LV.values) & (loglum_LV.values <= 10) & (loglum_LV.values >= 7)], 
 		Dec_LV[np.isfinite(loglum_LV.values) & (loglum_LV.values <= 10) & (loglum_LV.values >= 7)], 
