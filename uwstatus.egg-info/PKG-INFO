@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: uwstatus
+Version: 0.1
+Summary: Match object/coordinates to Dragonfly UW field + see observation status.
+Home-page: https://github.com/avapolzin/UWSStatusSearch
+Author: Ava Polzin
+Author-email: apolzin@uchicago.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3
+License-File: LICENSE
+
+UNKNOWN
+
