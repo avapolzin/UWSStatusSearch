@@ -183,7 +183,7 @@ def field(field, highlight_coords = False, save_path = False, virial = False,
 				ang_rad = (get_Rad(mass_LV*u.Msun)/(dist_LV.values[k]*u.Mpc)).decompose()*u.rad.to(u.deg)
 				virial_.append(sg.Point(RA_LV[k], Dec_LV[k]).buffer(ang_rad))
 	
-		area = field_.intersection(so.cascaded_union(virial_)).area
+		area = field_.intersection(so.unary_union(virial_)).area
 	
 	
 		for m in virial_:
