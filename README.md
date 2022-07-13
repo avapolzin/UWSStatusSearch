@@ -5,7 +5,7 @@ See `examples.ipynb` to see some examples of how to use `uwstatus`.
 
 To download and install,
 ```bash
-cd <path>
+cd ~ <or other install directory>
 
 git clone git@github.com:avapolzin/UWSStatusSearch.git
 
