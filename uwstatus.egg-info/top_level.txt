@@ -1,3 +1,0 @@
-uwstatus
-uwstatus/plot
-uwstatus/search
