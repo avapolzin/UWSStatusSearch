@@ -4,8 +4,12 @@ Match object/coordinates to UW field + see observation status.
 See `examples.ipynb` to see some examples of how to use `uwstatus`.
 
 To download and install,
-```
+```bash
+cd ~
+
 git clone git@github.com:avapolzin/UWSStatusSearch.git
+
+cd UWSStatusSearch
 
 sudo python3 setup.py install
 ```
