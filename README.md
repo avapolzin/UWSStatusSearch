@@ -1,4 +1,4 @@
-# UWSCoordSearch
+# `uwstatus`
 Match object/coordinates to UW field + see observation status.
 
 See `examples.ipynb` to see some examples of how to use `uwstatus`.
