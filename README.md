@@ -1,4 +1,6 @@
 # `uwstatus`
+[![astropy](http://img.shields.io/badge/powered%20by-AstroPy-orange.svg?style=flat)](http://www.astropy.org/)
+***
 Match object/coordinates to UW field + see observation status.
 
 See `examples.ipynb` to see some examples of how to use `uwstatus`.
@@ -41,7 +43,3 @@ Dependencies:
   - Sys
   - Matplotlib
   - Numpy
-
-
-
-[![astropy](http://img.shields.io/badge/powered%20by-AstroPy-orange.svg?style=flat)](http://www.astropy.org/)
